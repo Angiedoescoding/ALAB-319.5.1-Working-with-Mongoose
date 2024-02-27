@@ -1,5 +1,8 @@
+//The mongoose schema for the Grade model
+
 import mongoose from 'mongoose';
 
+// Schema for the Grade model
 const gradeSchema = new mongoose.Schema({
     class_id: {
         type: Number,
@@ -7,7 +10,7 @@ const gradeSchema = new mongoose.Schema({
         max: 300,
         required: true
     },
-    student_id: {
+    learner_id: {
         type: Number,
         required: true
     },
@@ -17,4 +20,4 @@ const gradeSchema = new mongoose.Schema({
     }]
 });
 
-export default mongoose.model('Grade', gradeSchema)
+export default mongoose.model('Grade', gradeSchema)             // The Grade model created from the schema

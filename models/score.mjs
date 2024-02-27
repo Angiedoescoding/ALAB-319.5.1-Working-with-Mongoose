@@ -1,3 +1,5 @@
+//The mongoose schema for the Score model
+
 import mongoose from 'mongoose';
 
 const scoreSchema = new mongoose.Schema({
